@@ -1,0 +1,17 @@
+
+.cell {
+ width: 10px;
+ height: 10px;
+ background: white;
+ color: red;
+  }
+  .row{
+    width: 400px;
+  }
+  .cell input{
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    border: none;
+    background: white;
+  }

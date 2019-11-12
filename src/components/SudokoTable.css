@@ -1,0 +1,9 @@
+.tableContainer {
+  width: 400px;
+  height: 400px;
+}
+#grid {
+  width: 400px;
+  height: 400px;
+  background: yellow;
+}
