@@ -8,10 +8,34 @@
   .row{
     width: 400px;
   }
+
   .cell input{
     width: 10px;
     height: 10px;
     text-align: center;
     border: none;
-    background: white;
+    /* background: white; */
   }
+  
+  .cell input[type="text"]:disabled {
+  background: #dddddd;
+}
+tr:first-child td {
+  border-top-color: black;
+  border-top-width: 10px;
+}
+tr:nth-child(3n) td {
+  border-bottom-color: black;
+  border-bottom-width: 10px;
+
+}
+td:first-child {
+  border-left-color: red;
+  border-left-width: 10px;
+
+}
+td:nth-child(3n) {
+  border-right-color: red;
+  border-right-width: 10px;
+
+}
