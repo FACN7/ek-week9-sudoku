@@ -39,7 +39,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <SudokoTable board={board} setBoard={setBoard} iboard={iboard} />
-      <SubmitButton onclick={allInputValidity} board={board}></SubmitButton>
+      <SubmitButton id='button1' onclick={allInputValidity} board={board}></SubmitButton>
       </header>
     </div>
   );
