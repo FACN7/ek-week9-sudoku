@@ -10,4 +10,4 @@ const board = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0]
 ];
 
-export default testBoard;
+export default board;
