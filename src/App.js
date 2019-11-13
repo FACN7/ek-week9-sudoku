@@ -1,10 +1,10 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import InitBoard from "./utils/InitTable";
-import getBoard from "./utils/getBoard";
 import SudokoTable from "./components/SudokoTable";
 import { useAlert } from "react-alert";
+import InitBoard from "./utils/InitTable";
+import getBoard from "./utils/getBoard"
 const url = "https://sugoku.herokuapp.com/board?difficulty=hard";
 
 function App() {
