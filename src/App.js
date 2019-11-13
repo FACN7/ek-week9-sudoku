@@ -1,25 +1,26 @@
 import React from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
-import "./utils/confetti"
-import YouWin from "./components/YouWin"
 import SudokoTable from "./components/SudokoTable";
-import SubmitButton from "./components/SubmitButton";
-import InitBoard from "./utils/InitTable";
+    import InitBoard from "./utils/InitTable";
+
 function App() {
-  const [board,setBoard]=React.useState(InitBoard)
-  const somethin= ()=> console.table(board);
-  
+  const [board, setBoard] = React.useState(InitBoard);
+  React.useEffect(() => {
+    getBoard(url).then(data => {
+      console.log("hello",typeof(data.board[0][0]));
+      setBoard(data.board);
+    });
+  }, []);
+  if (board === InitBoard) return <div>...loading</div>;
+
   return (
     <div className="App">
       <header className="App-header">
-        <SudokoTable />
-      <SubmitButton onclick={somethin} board={board}/>
-      <YouWin />
+        <SudokoTable board={board}/>
       </header>
     </div>
   );
 }
 
-const checkIfFinished = ()=>{};
 export default App;
