@@ -1,7 +1,7 @@
 import React from "react";
 import { useAlert } from "react-alert";
 
-const SubmitButton = ({onclick,board }) => {
+const SubmitButton = ({onclick,board,id }) => {
   const alert = useAlert();
 
   // let clickfunction = () => console.log("just clicked");
@@ -12,7 +12,7 @@ const SubmitButton = ({onclick,board }) => {
 
   return (
     <div>
-      <button onClick={()=>{onclick(board, alert)}}>Check</button>
+      <button id={id} onClick={()=>{onclick(board, alert)}}>Check</button>
     </div>
   );
 };
