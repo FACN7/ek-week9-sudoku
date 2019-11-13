@@ -2,13 +2,11 @@ import React from "react";
 import "./SubBoard.css";
 const numbers = [...Array(9).keys()];
 const handler = (e, props, idx) => {
-  // props.board[props.row][idx]=e.target.value;
-  props.setBoard(board => {
-      board[props.row][idx] = parseInt(e.target.value)
-      console.table(board);
-    return (board);
-  });
-  // props.setState(e=>e+1);
+    if(e.target.value==="")
+    return;
+  let board = [...props.board];
+  board[props.row][idx] = parseInt(e.target.value);
+  props.setBoard(board);
 };
 
 const SubBoard = props => {
@@ -22,11 +20,11 @@ const SubBoard = props => {
             type="text"
             maxLength="1"
             defaultValue={
-              props.board[props.row][idx] === 0
+              props.iboard[props.row][idx] === 0
                 ? ""
-                : props.board[props.row][idx]
+                : props.iboard[props.row][idx]
             }
-            disabled={props.board[props.row][idx] !== 0}
+            disabled={props.iboard[props.row][idx] !== 0}
             onChange={e => handler(e, props, idx)}
           />
         </td>

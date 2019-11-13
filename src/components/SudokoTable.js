@@ -4,10 +4,7 @@ import SubBoard from "./SubBoard";
 import "./SudokoTable.css";
 const numbers = [...Array(9).keys()];
 const SudokoTable = props => {
-  const [state, setState] = React.useState(props.board);
-  React.useEffect(() => {
-    console.table(state);
-  }, [state]);
+  // const [state, setState] = React.useState(props.state);
   return (
     <div className="tableContainer">
       <table id="grid" border="1">
@@ -16,9 +13,9 @@ const SudokoTable = props => {
             <SubBoard
               key={idx}
               row={idx}
-              board={state}
-              setBoard={setState}
-
+              board={props.board}
+              setBoard={props.setBoard}
+              iboard={props.iboard}
             ></SubBoard>
           ))}
         </tbody>
