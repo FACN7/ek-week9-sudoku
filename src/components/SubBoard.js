@@ -17,8 +17,6 @@ const handler = (e, props, idx, alert) => {
   if (val !== 0) {
     if (!currentInputValidity(board, props.row, idx)) {
       alert.show("change it", { timeout: 1000 });
-    } else {
-      alert.show("nice", { timeout: 1000 });
     }
   }
 };

@@ -5,7 +5,9 @@ import SudokoTable from "./components/SudokoTable";
 import { useAlert } from "react-alert";
 import InitBoard from "./utils/InitTable";
 import getBoard from "./utils/getBoard"
-const url = "https://sugoku.herokuapp.com/board?difficulty=hard";
+import SubmitButton from "./components/SubmitButton"
+import  { currentInputValidity,allInputValidity } from "./utils/checkIfCorrect"
+const url = "https://sugoku.herokuapp.com/board?difficulty=easy";
 
 function App() {
   const [board, setBoard] = React.useState(InitBoard);
@@ -37,6 +39,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <SudokoTable board={board} setBoard={setBoard} iboard={iboard} />
+      <SubmitButton onclick={allInputValidity} board={board}></SubmitButton>
       </header>
     </div>
   );
