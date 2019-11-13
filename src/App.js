@@ -1,10 +1,8 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import InitBoard from "./utils/InitTable";
-import getBoard from "./utils/getBoard";
 import SudokoTable from "./components/SudokoTable";
-const url = "https://sugoku.herokuapp.com/board?difficulty=easy";
+    import InitBoard from "./utils/InitTable";
 
 function App() {
   const [board, setBoard] = React.useState(InitBoard);
