@@ -1,5 +1,5 @@
 import React from "react";
-import confetti from "../utils/confetti"
+
 
 const SubmitButton = (props) => {
     let {board = null ,onclick} = props;
@@ -13,6 +13,7 @@ const SubmitButton = (props) => {
     //     console.table(board);
     //     clickfunction = () => console.log("We have board CHANGE THIS FUNCTION!!!");
     // }
+    
     return (
         <div><button onClick={onclick}>Check</button></div>
     );
