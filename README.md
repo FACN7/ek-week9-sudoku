@@ -1,8 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+[![sudoku](https://i.guim.co.uk/img/media/62ccdf6a84e355158f7c95052e6161da53856850/0_0_431_431/master/431.jpg?width=620&quality=85&auto=format&fit=max&s=90b1b337e812883be35b19737ba4712b)](https://infallible-aryabhata-0cb91b.netlify.com)
 ## [ OUR HOSTED SODUKO ](https://infallible-aryabhata-0cb91b.netlify.com)
-## Available Scripts
 
+## Local installation
+```
+ git clone https://github.com/FACN7/ek-week9-sudoku.git
+ cd ek-week9-sudoku
+ npm i 
+```
 In the project directory, you can run:
 
 ### `npm start`
@@ -13,6 +17,46 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
+## User journey
+Well, it's a Sudoku game app, you can play it stright away, there are no opponents but your own mental capabilities.
+if you don't know what Sudoku is, the [here's a nice Wiki](https://en.wikipedia.org/wiki/Sudoku)
+[TO PLAY IT CLICK HERE](https://infallible-aryabhata-0cb91b.netlify.com)
+
+## dev journal
+For this project we had to:<br />
+* Use React
+* Fetch data from an API (in our case an unsolved Sudoku Array*)
+* Display said data into a form (a Sudoku form we made using React)
+* check the user (player) progress
+* Tests for UI and the game logic
+## What we did:
+
+- [x] created a react app
+- [x] created components SudokoTable(duh!),SubBoard(in this case it's just a row :)
+- [x] CSS (yeah)
+
+
+
+Stretch goals:
+
+- [] testing
+
+## new stuff we've learned
+
+* react
+
+
+
+
+
+
+
+
+
+
+
+
+<!------
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
@@ -66,4 +110,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify ---->
